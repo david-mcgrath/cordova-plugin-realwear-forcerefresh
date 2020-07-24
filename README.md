@@ -26,9 +26,9 @@ if (wearML &&
   var prev = wearML.getCommands;
   wearML.getCommands = function () {
     prev();
-      window.cordova.plugins.realwearforcerefresh.forceRefresh(
-        success,
-        error);
+    window.cordova.plugins.realwearforcerefresh.forceRefresh(
+      success,
+      error);
   }
 }
 ```
