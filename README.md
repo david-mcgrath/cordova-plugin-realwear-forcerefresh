@@ -7,8 +7,11 @@ Hopefully this workaround won't be required in the long term.
 
 # Usage
 Whenever a refresh is required, call `window.cordova.plugins.realwearforcerefresh.forceRefresh(success, error)`.
+
 I've just been piggybacking on RealWear's wearml_engine.js getCommands method, which gets called whenever the DOM changes.
+
 To do so, wherever your app is initialised you can just add something like:
+
 ```javascript
 if (wearML &&
     wearML.getCommands &&
