@@ -1,6 +1,6 @@
 {
-  "name": "cordova-plugin-realwearforcerefresh",
-  "version": "1.0.0",
+  "name": "cordova-plugin-realwear-forcerefresh",
+  "version": "1.0.1",
   "description": "Triggers a WearML command refresh for the RealWear HMT-1",
   "cordova": {
     "id": "cordova-plugin-realwearforcerefresh",
@@ -10,16 +10,20 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/david-mcgrath/cordova-plugin-realwearforcerefresh.git"
+    "url": "git+https://github.com/david-mcgrath/cordova-plugin-realwear-forcerefresh.git"
   },
   "keywords": [
     "ecosystem:cordova",
-    "cordova-android"
+    "cordova-android",
+    "realwear",
+	  "hmt-1",
+	  "hmt-1z1",
+	  "wearml"
   ],
   "author": "David McGrath",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/david-mcgrath/cordova-plugin-realwearforcerefresh/issues"
+    "url": "https://github.com/david-mcgrath/cordova-plugin-realwear-forcerefresh/issues"
   },
-  "homepage": "https://github.com/david-mcgrath/cordova-plugin-realwearforcerefresh#readme"
+  "homepage": "https://github.com/david-mcgrath/cordova-plugin-realwear-forcerefresh#readme"
 }
