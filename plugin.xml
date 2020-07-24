@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        id="cordova-plugin-realwearforcerefresh"
+        version="1.0.2">
+	
+	<name>realwearforcerefresh</name>
+	
+	<description>Triggers a WearML command refresh for the RealWear HMT-1</description>
+	
+	<author>David McGrath</author>
+	
+	<!-- android -->
+	<platform name="android">
+		<js-module name="realwearforcerefresh" src="www/realwearforcerefresh.js">
+			<clobbers target="cordova.plugins.realwearforcerefresh" />
+		</js-module>
+		
+		<config-file parent="/*" target="res/xml/config.xml">
+			<feature name="realwearforcerefresh">
+				<param name="android-package" value="com.android.plugins.realwearforcerefresh" />
+			</feature>
+		</config-file>
+		
+		<source-file src="src/android/realwearforcerefresh.java" target-dir="src/com/android/plugins" />
+	</platform>
+</plugin>
